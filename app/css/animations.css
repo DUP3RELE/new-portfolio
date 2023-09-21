@@ -60,6 +60,23 @@
 	--_p: 100%;
 	--_s: 0.3s;
 }
+.hover-animation {
+	padding: 5px;
+	border: 0 solid teal;
+	border-radius: 25px;
+	background-color: rgb(209 213 219);
+}
+.scaleClass:hover {
+	opacity: 0.9;
+	transition: 0.3s;
+}
+.hover-animation:hover {
+	border-radius: 25px;
+	background-color: rgba(238, 241, 245, 0.366);
+	box-shadow: 0 0 5px 3px teal;
+	transition: 0.3s;
+}
+
 @media (min-width: 768px) {
 	.dot {
 		width: 6px;

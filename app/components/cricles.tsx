@@ -7,10 +7,8 @@ import JsIcon from "../img/js.svg";
 import CssIcon from "../img/css3-alt.svg";
 
 const CirclesComponent = () => {
-	// Inicjalizacja stanu dla wartości przewinięcia
 	const [scrollY, setScrollY] = useState(0);
 
-	// Nasłuchiwanie na zdarzenie przewijania
 	useEffect(() => {
 		const handleScroll = () => {
 			setScrollY(window.scrollY);
@@ -18,13 +16,11 @@ const CirclesComponent = () => {
 
 		window.addEventListener("scroll", handleScroll);
 
-		// Usuń nasłuchiwacz podczas czyszczenia
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
 	}, []);
 
-	// Zastosuj style na podstawie wartości przewinięcia
 	const firstCircleStyle = {
 		transform: `translateY(${-scrollY * 1.0}px)`,
 	};

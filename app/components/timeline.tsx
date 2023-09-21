@@ -11,9 +11,9 @@ import {
 
 export default function MyTimeline() {
 	return (
-		<div className=''>
+		<div className='m-8'>
 			<Timeline>
-				<TimelineItem>
+				<TimelineItem className="hover-animation mb-2 mt-2">
 					<TimelineConnector />
 					<TimelineHeader className='h-3'>
 						<TimelineIcon />
@@ -25,11 +25,11 @@ export default function MyTimeline() {
 							Jak to się zaczęło?
 						</Typography>
 					</TimelineHeader>
-					<TimelineBody className='pb-8'>
+					<TimelineBody className='p-5'>
 						<Typography
 							variant='small'
 							color='gray'
-							className='font-normal text-gray-600'
+							className='font-normal text-gray-600 text-sm md:text-lg'
 						>
 							Przez niemal dekadę działałem w branży gastronomicznej, doskonaląc
 							umiejętności organizacji, planowania oraz dbałość o szczegóły.
@@ -40,7 +40,7 @@ export default function MyTimeline() {
 						</Typography>
 					</TimelineBody>
 				</TimelineItem>
-				<TimelineItem>
+				<TimelineItem className="hover-animation mb-2 mt-2">
 					<TimelineConnector />
 					<TimelineHeader className='h-3'>
 						<TimelineIcon />
@@ -52,11 +52,11 @@ export default function MyTimeline() {
 							Zmiany są dobre!
 						</Typography>
 					</TimelineHeader>
-					<TimelineBody className='pb-8'>
+					<TimelineBody className='p-5'>
 						<Typography
 							variant='small'
 							color='gray'
-							className='font-normal text-gray-600'
+							className='font-normal text-gray-600 text-sm md:text-lg' 
 						>
 							Zdecydowałem się na zmianę branży i zainteresowałem się tworzeniem
 							stron internetowych. Programowanie przypomina mi przygotowywanie
@@ -68,7 +68,7 @@ export default function MyTimeline() {
 						</Typography>
 					</TimelineBody>
 				</TimelineItem>
-				<TimelineItem>
+				<TimelineItem className="hover-animation mb-2 mt-2">
 					<TimelineHeader className='h-3'>
 						<TimelineIcon />
 						<Typography
@@ -79,11 +79,11 @@ export default function MyTimeline() {
 							Moje nowe wyzwanie!
 						</Typography>
 					</TimelineHeader>
-					<TimelineBody>
+					<TimelineBody className='p-5'>
 						<Typography
 							variant='small'
 							color='gray'
-							className='font-normal text-gray-600'
+							className='font-normal text-gray-600 text-sm md:text-lg'
 						>Cenię branże, które stawiają wyzwania i umożliwiają nieustanny rozwój umiejętności, dlatego zdecydowałem się na programowanie. Od pół roku uczę się tej dziedziny od podstaw i z zapałem podejmuję kolejne wyzwania. Moim celem jest praca jako front-end developer i dalszy rozwój.
 						</Typography>
 					</TimelineBody>

@@ -6,10 +6,8 @@ export default function ProjectsSection() {
 		>
 			<h2 className='text-4xl mb-4'>Projekty</h2>
 			<p className='text-xl'>
-				Tutaj znajduje się opis o mnie. Możesz napisać tutaj dowolną treść
-				prezentującą Twoje doświadczenie, umiejętności czy pasje.
+				Projekty które przygotowałem:
 			</p>
-			{/* Możesz dodać dodatkową treść, zdjęcia itp. */}
 		</div>
 	);
 }
