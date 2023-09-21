@@ -18,25 +18,17 @@ const AboutMeCirclesComponent = () => {
 		};
 	}, []);
 
-	let factor1;
+	let factor1: number;
+	let factor2: number;
+	let factor3: number;
 
 	if (window.innerWidth <= 1024) {
 		factor1 = -0.2;
-	} else {
-		factor1 = 0.5;
-	}
-	let factor2;
-
-	if (window.innerWidth <= 1024) {
 		factor2 = -0.15;
-	} else {
-		factor2 = 0.3;
-	}
-	let factor3;
-
-	if (window.innerWidth <= 1024) {
 		factor3 = -0.07;
 	} else {
+		factor1 = 0.5;
+		factor2 = 0.3;
 		factor3 = 0.2;
 	}
 
