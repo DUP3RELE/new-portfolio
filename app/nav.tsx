@@ -13,22 +13,23 @@ const StickyNavbar: React.FC = () => {
 	const [activeSection, setActiveSection] = useState<string>("");
 
 	useEffect(() => {
+		const yOffset = 70;
+
 		const handleScroll = () => {
 			const sections = ["main", "about-me", "projects", "contact"];
 			let currentSection = "";
 
 			sections.forEach((section) => {
 				const element = document.getElementById(section);
-				const rect = element?.getBoundingClientRect();
+				if (element) {
+					// Uwzględniamy yOffset w naszym porównaniu
+					const fromTop = element.offsetTop - yOffset;
+					const sectionBottom = fromTop + element.clientHeight;
 
-				if (
-					rect &&
-					rect.top <= window.innerHeight / 3 &&
-					rect.bottom >= window.innerHeight / 3
-				) {
-					currentSection = section;
+					if (window.scrollY >= fromTop && window.scrollY < sectionBottom) {
+						currentSection = section;
+					}
 				}
-				console.log(currentSection);
 			});
 
 			setActiveSection(currentSection);
@@ -44,6 +45,8 @@ const StickyNavbar: React.FC = () => {
 		children,
 		section,
 	}) => {
+		const allowedSections = ["about-me", "projects", "contact"];
+
 		return (
 			<Typography
 				as='li'
@@ -58,7 +61,7 @@ const StickyNavbar: React.FC = () => {
 					}`}
 				>
 					{children}
-					{section && (
+					{allowedSections.includes(section) && (
 						<div className='dots'>
 							<span className='dot bg-blue-500'></span>
 							<span className='dot bg-red-500'></span>
@@ -73,22 +76,28 @@ const StickyNavbar: React.FC = () => {
 
 	const navList = (
 		<ul className='mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6'>
-			<NavLink section='about-me'>O mnie</NavLink>
-			<NavLink section='projects'>Projekty</NavLink>
-			<NavLink section='contact'>Kontakt</NavLink>
+			<NavLink section='about-me'>
+				<p className='section-anim'>O mnie</p>
+			</NavLink>
+			<NavLink section='projects'>
+				<p className='section-anim'>Projekty</p>
+			</NavLink>
+			<NavLink section='contact'>
+				<p className='section-anim'>Kontakt</p>
+			</NavLink>
 		</ul>
 	);
 
 	return (
-		<div className='overflow-hidden'>
-			<Navbar className='sticky top-0 z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4 bg-gradient-to-r from-emerald-500 to-emerald-200 bg-opacity-5'>
-				<div className='flex items-center justify-between text-blue-gray-900 '>
+		<div className='overflow-hidden drop-shadow-lg'>
+			<Navbar className='sticky top-0 z-100 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4 bg-gradient-to-r from-emerald-500 to-emerald-800 bg-opacity-5 '>
+				<div className='flex items-center justify-between text-blue-gray-900  '>
 					<Typography
 						as='a'
 						href='#'
-						className='mr-4 cursor-pointer py-1.5 font-medium special-case'
+						className='mr-4 cursor-pointer py-1.5 font-medium special-case '
 					>
-						Krystian Żywczak - Portfolio
+						<p className='section-anim'>Krystian Żywczak - Portfolio</p>
 					</Typography>
 					<div className='flex items-center gap-4'>
 						<div className='mr-4 hidden lg:block '>{navList}</div>
