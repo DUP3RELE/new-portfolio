@@ -9,7 +9,7 @@ export default function Footer() {
 				color='blue-gray'
 				className='font-normal'
 			>
-				`&copy; {currentYear} Krystian Żywczak`
+				&copy; {currentYear} Krystian Żywczak
 			</Typography>
 			<ul className='flex flex-wrap items-center gap-y-2 gap-x-8'>
 				<li>

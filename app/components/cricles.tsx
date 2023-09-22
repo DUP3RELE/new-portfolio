@@ -45,7 +45,7 @@ const CirclesComponent = () => {
 			>
 				<Image
 					src={ReactIcon}
-					className='h-6 md:h-12'
+					className='h-6 md:h-12 pointer-events-none'
 					alt='React Icon'
 				/>
 			</div>
@@ -55,7 +55,7 @@ const CirclesComponent = () => {
 			>
 				<Image
 					src={JsIcon}
-					className='h-10 md:h-20'
+					className='h-10 md:h-20 pointer-events-none'
 					alt='JS Icon'
 				/>
 			</div>
@@ -65,7 +65,7 @@ const CirclesComponent = () => {
 			>
 				<Image
 					src={HtmlIcon}
-					className='h-8 md:h-16'
+					className='h-8 md:h-16 pointer-events-none'
 					alt='HTML Icon'
 				/>
 			</div>
@@ -76,7 +76,7 @@ const CirclesComponent = () => {
 			>
 				<Image
 					src={CssIcon}
-					className='h-14 md:h-28'
+					className='h-14 md:h-28 pointer-events-none'
 					alt='CSS Icon'
 				/>
 			</div>

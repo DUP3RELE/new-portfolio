@@ -1,6 +1,5 @@
 import MyTimeline from "@/app/components/timeline";
 import AboutMeCirclesComponent from "@/app/components/aboutmecricles";
-import Image from "next/image";
 
 export default function AboutMeSection() {
 	return (

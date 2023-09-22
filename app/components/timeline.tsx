@@ -13,7 +13,7 @@ export default function MyTimeline() {
 	return (
 		<div className='m-8'>
 			<Timeline>
-				<TimelineItem className="hover-animation mb-2 mt-2">
+				<TimelineItem className=" mb-2 mt-2">
 					<TimelineConnector />
 					<TimelineHeader className='h-3'>
 						<TimelineIcon />
@@ -40,7 +40,7 @@ export default function MyTimeline() {
 						</Typography>
 					</TimelineBody>
 				</TimelineItem>
-				<TimelineItem className="hover-animation mb-2 mt-2">
+				<TimelineItem className=" mb-2 mt-2">
 					<TimelineConnector />
 					<TimelineHeader className='h-3'>
 						<TimelineIcon />
@@ -68,7 +68,7 @@ export default function MyTimeline() {
 						</Typography>
 					</TimelineBody>
 				</TimelineItem>
-				<TimelineItem className="hover-animation mb-2 mt-2">
+				<TimelineItem className="mb-2 mt-2">
 					<TimelineHeader className='h-3'>
 						<TimelineIcon />
 						<Typography
@@ -76,7 +76,7 @@ export default function MyTimeline() {
 							color='blue-gray'
 							className='leading-none'
 						>
-							Moje nowe wyzwanie!
+							Nowe wyzwanie!
 						</Typography>
 					</TimelineHeader>
 					<TimelineBody className='p-5'>
