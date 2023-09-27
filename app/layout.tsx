@@ -15,7 +15,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang='pl' className="scroll-smooth">
+		<html lang='pl' className="scroll-smooth wrapper">
 			<body className={roboto.className}>{children}</body>
 		</html>
 	);

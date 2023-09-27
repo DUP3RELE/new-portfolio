@@ -17,6 +17,9 @@ body {
 		)
 		rgb(var(--background-start-rgb));
 }
+.wrapper {
+	max-width: 1600px;
+}
 .cricle1 {
 	width: 250px;
 	height: 250px;
