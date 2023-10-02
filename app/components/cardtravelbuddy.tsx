@@ -12,6 +12,8 @@ import travelBuddy from "../img/travel-buddy.jpg";
 import reactIcon from "../img/react.svg";
 import jsIcon from "../img/js.svg";
 import mongoDB from "../img/mongodb-icon.svg";
+import postman from "../img/icons8-postman-api.svg";
+import vs from "../img/icons8-visual-studio.svg";
 
 interface FullScreenPopupProps {
 	isOpen: boolean;
@@ -106,26 +108,47 @@ const FullScreenPopup: React.FC<FullScreenPopupProps> = ({
 							>
 								Użyte technologie:
 							</Typography>
-							<div className='w-7 h-7 md:w-10 md:h-10 bg-blue-700 rounded-full flex justify-center items-center m-1'>
-								<Image
-									src={reactIcon}
-									alt='react image'
-									className='w-5 h-5 md:w-7 md:h-7'
-								/>
-							</div>
-							<div className='w-7 h-7 md:w-10 md:h-10 bg-yellow-400 rounded-full flex justify-center items-center m-1'>
-								<Image
-									src={jsIcon}
-									alt='JavaScript image'
-									className='w-5 h-5 md:w-7 md:h-7'
-								/>
-							</div>
-							<div className='w-7 h-7 md:w-10 md:h-10 bg-green-400 rounded-full flex justify-center items-center m-1'>
-								<Image
-									src={mongoDB}
-									alt='JavaScript image'
-									className='w-5 h-5 md:w-7 md:h-7'
-								/>
+							<div className='flex flex-wrap'>
+								<div className='w-7 h-7 md:w-10 md:h-10 bg-blue-700 rounded-full flex justify-center items-center m-1'>
+									<Image
+										title='React.js'
+										src={reactIcon}
+										alt='react image'
+										className='w-5 h-5 md:w-7 md:h-7'
+									/>
+								</div>
+								<div className='w-7 h-7 md:w-10 md:h-10 bg-yellow-400 rounded-full flex justify-center items-center m-1'>
+									<Image
+										title='JavaScript'
+										src={jsIcon}
+										alt='JavaScript image'
+										className='w-5 h-5 md:w-7 md:h-7'
+									/>
+								</div>
+								<div className='w-7 h-7 md:w-10 md:h-10 bg-green-400 rounded-full flex justify-center items-center m-1'>
+									<Image
+										title='mongoDB'
+										src={mongoDB}
+										alt='mongoDB image'
+										className='w-5 h-5 md:w-7 md:h-7'
+									/>
+								</div>
+								<div className='w-7 h-7 md:w-10 md:h-10 bg-orange-500 rounded-full flex justify-center items-center m-1'>
+									<Image
+										title='postman'
+										src={postman}
+										alt='postman image'
+										className='w-5 h-5 md:w-7 md:h-7'
+									/>
+								</div>
+								<div className='w-7 h-7 md:w-10 md:h-10 bg-white rounded-full flex justify-center items-center m-1'>
+									<Image
+										title='Visual Studio Code'
+										src={vs}
+										alt='Visual Studio Code image'
+										className='w-5 h-5 md:w-7 md:h-7'
+									/>
+								</div>
 							</div>
 						</Typography>
 					</CardBody>

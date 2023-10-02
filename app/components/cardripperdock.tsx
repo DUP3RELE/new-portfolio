@@ -12,6 +12,8 @@ import ripperdock from "../img/Zrzut ekranu 2023-10-02 133235.png";
 import reactIcon from "../img/react.svg";
 import jsIcon from "../img/js.svg";
 import mongoDB from "../img/mongodb-icon.svg";
+import tsIcon from "../img/icons8-typescript.svg";
+import nextIcon from "../img/icons8-nextjs.svg";
 
 interface FullScreenPopupProps {
 	isOpen: boolean;
@@ -108,9 +110,10 @@ const FullScreenPopup: React.FC<FullScreenPopupProps> = ({
 								Użyte technologie:
 							</Typography>
 
-							<div className='flex flex-row'>
+							<div className='flex flex-wrap mb-1'>
 								<div className='w-7 h-7 md:w-10 md:h-10 bg-blue-700 rounded-full flex justify-center items-center m-1'>
 									<Image
+										title='React.js'
 										src={reactIcon}
 										alt='react image'
 										className='w-5 h-5 md:w-7 md:h-7'
@@ -118,15 +121,33 @@ const FullScreenPopup: React.FC<FullScreenPopupProps> = ({
 								</div>
 								<div className='w-7 h-7 md:w-10 md:h-10 bg-yellow-400 rounded-full flex justify-center items-center m-1'>
 									<Image
+										title='JavaScript'
 										src={jsIcon}
 										alt='JavaScript image'
 										className='w-5 h-5 md:w-7 md:h-7'
 									/>
 								</div>
+								<div className='w-7 h-7 md:w-10 md:h-10 bg-blue-500 rounded-full flex justify-center items-center m-1'>
+									<Image
+										title='TypeScript'
+										src={tsIcon}
+										alt='TypeScript image'
+										className='w-5 h-5 md:w-7 md:h-7'
+									/>
+								</div>
+								<div className='w-7 h-7 md:w-10 md:h-10 bg-gray-500 rounded-full flex justify-center items-center m-1'>
+									<Image
+										title='Next.js'
+										src={nextIcon}
+										alt='next.js image'
+										className='w-5 h-5 md:w-7 md:h-7'
+									/>
+								</div>
 								<div className='w-7 h-7 md:w-10 md:h-10 bg-green-400 rounded-full flex justify-center items-center m-1'>
 									<Image
+										title='MongoDB'
 										src={mongoDB}
-										alt='JavaScript image'
+										alt='mongoDB image'
 										className='w-5 h-5 md:w-7 md:h-7'
 									/>
 								</div>
