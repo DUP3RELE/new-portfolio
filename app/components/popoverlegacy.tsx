@@ -29,7 +29,7 @@ export default function Popover_legacy() {
 			</PopoverHandler>
 			<PopoverContent className='popoverstyle2'>
 				<a
-					href='https://www.facebook.com/BorsuczaStronaZycia'
+					href='http://kzportfolio.pl/'
 					target='_blank'
 					className="p-2"
 				>
