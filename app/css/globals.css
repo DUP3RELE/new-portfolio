@@ -138,8 +138,14 @@ body {
 .shadow-projects1 {
 	transition: 0.3s;
 }
+.shadow-projects2 {
+	transition: 0.3s;
+}
 .shadow-projects1:hover {
 	box-shadow: 0 0 5px 5px #EA3C12 ;
+}
+.shadow-projects2:hover {
+	box-shadow: 0 0 5px 5px royalblue ;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
 	.cricle1 {

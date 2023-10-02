@@ -8,7 +8,7 @@ import {
 	Button,
 } from "@material-tailwind/react";
 import Image from "next/image";
-import travelBuddy from "../img/travel-buddy.jpg";
+import ripperdock from "../img/Zrzut ekranu 2023-10-02 133235.png";
 import reactIcon from "../img/react.svg";
 import jsIcon from "../img/js.svg";
 import mongoDB from "../img/mongodb-icon.svg";
@@ -49,19 +49,19 @@ const FullScreenPopup: React.FC<FullScreenPopupProps> = ({
 					<div className='h-2/4 w-3/4'>
 						<Image
 							className='relative rounded-3xl m-4 drop-shadow-lg z-50'
-							src={travelBuddy}
+							src={ripperdock}
 							alt='travel-buddy image'
 						/>
 					</div>
 					<div className='w-3/4 rounded-r-2xl bg-black flex flex-wrap justify-evenly items-center'>
 						<a
-							href='https://travel-buddy-eight.vercel.app/'
+							href='https://ripperdoc.vercel.app/'
 							target='_blank'
 						>
 							<button className='button-popup-style'>Zobacz stronę</button>
 						</a>
 						<a
-							href='https://github.com/DUP3RELE/TravelBuddy'
+							href='https://github.com/DUP3RELE/ripperdoc'
 							target='_blank'
 						>
 							<button className='button-popup-style'>Repozytorium Git</button>
@@ -74,12 +74,13 @@ const FullScreenPopup: React.FC<FullScreenPopupProps> = ({
 						color='blue-gray'
 						className='mb-2'
 					>
-						Travel Buddy
+						Ripperdock
 					</Typography>
 					<Typography>
-						Aplikacja, w której można dodawać i edytować karty z tytułem i
-						opisem. Użytkownicy zalogowani mogą edytować karty, użytkownicy
-						niezalogowani mogą je jedynie oglądać.
+						Sklep internetowy z implantami inspirowany światem Cyberpunka. Na
+						tej stronie można założyć konto użytkownia i dodawać implanty do
+						koszyka. Można także zalogować się na konto administratora, dodawać
+						i usuwać produkty.
 					</Typography>
 				</CardBody>
 				<div className='flex flex-row'>
@@ -92,13 +93,13 @@ const FullScreenPopup: React.FC<FullScreenPopupProps> = ({
 							Czego się nauczyłem?
 						</Typography>
 						<Typography>
-							Nauczyłem się planowania i budowy struktury aplikacji w React.js
-							Next13, praca z API (MongoDB, Postman), podstawy TypeScripta,
-							ćwiczenia z Javascriptem. Hosting aplikacji na Vercelu.
+							Przećwiczyłem planowanie i budowę aplikacji w React.js Next13,
+							pracę z API (MongoDB, Postman). Przy produkcji korzystałem z
+							supersetu dla języka JavaScript, TypeScripta.
 						</Typography>
 					</CardBody>
-					<CardBody className='relative rounded-3xl m-2 p-4 bg-slate-300 drop-shadow-lg mb-10'>
-						<Typography className='flex flex-wrap'>
+					<CardBody className='relative rounded-3xl m-2 p-4 bg-slate-300 drop-shadow-lg'>
+						<Typography className='flex flex-col'>
 							<Typography
 								variant='h5'
 								color='blue-gray'
@@ -106,26 +107,29 @@ const FullScreenPopup: React.FC<FullScreenPopupProps> = ({
 							>
 								Użyte technologie:
 							</Typography>
-							<div className='w-7 h-7 md:w-10 md:h-10 bg-blue-700 rounded-full flex justify-center items-center m-1'>
-								<Image
-									src={reactIcon}
-									alt='react image'
-									className='w-5 h-5 md:w-7 md:h-7'
-								/>
-							</div>
-							<div className='w-7 h-7 md:w-10 md:h-10 bg-yellow-400 rounded-full flex justify-center items-center m-1'>
-								<Image
-									src={jsIcon}
-									alt='JavaScript image'
-									className='w-5 h-5 md:w-7 md:h-7'
-								/>
-							</div>
-							<div className='w-7 h-7 md:w-10 md:h-10 bg-green-400 rounded-full flex justify-center items-center m-1'>
-								<Image
-									src={mongoDB}
-									alt='JavaScript image'
-									className='w-5 h-5 md:w-7 md:h-7'
-								/>
+
+							<div className='flex flex-row'>
+								<div className='w-7 h-7 md:w-10 md:h-10 bg-blue-700 rounded-full flex justify-center items-center m-1'>
+									<Image
+										src={reactIcon}
+										alt='react image'
+										className='w-5 h-5 md:w-7 md:h-7'
+									/>
+								</div>
+								<div className='w-7 h-7 md:w-10 md:h-10 bg-yellow-400 rounded-full flex justify-center items-center m-1'>
+									<Image
+										src={jsIcon}
+										alt='JavaScript image'
+										className='w-5 h-5 md:w-7 md:h-7'
+									/>
+								</div>
+								<div className='w-7 h-7 md:w-10 md:h-10 bg-green-400 rounded-full flex justify-center items-center m-1'>
+									<Image
+										src={mongoDB}
+										alt='JavaScript image'
+										className='w-5 h-5 md:w-7 md:h-7'
+									/>
+								</div>
 							</div>
 						</Typography>
 					</CardBody>
