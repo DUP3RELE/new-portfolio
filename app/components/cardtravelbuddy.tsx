@@ -41,21 +41,21 @@ const FullScreenPopup: React.FC<FullScreenPopupProps> = ({
 			onClick={handleBackdropClick}
 		>
 			<Card
-				className='w-4/6 h-4/5 rounded-3xl border-4 border-black'
+				className='w-5/6 h-5/6 rounded-3xl border-4 border-black'
 				ref={popupRef}
 			>
 				<CardHeader
 					color='blue-gray'
 					className='relative flex justify-start'
 				>
-					<div className='h-2/4 w-3/4'>
+					<div className='h-5/6 w-0 md:w-3/4 hidden md:block'>
 						<Image
-							className='relative rounded-3xl m-4 drop-shadow-lg z-50'
+							className='relative rounded-3xl h-full m-4 drop-shadow-lg z-50'
 							src={travelBuddy}
 							alt='travel-buddy image'
 						/>
 					</div>
-					<div className='w-3/4 rounded-r-2xl bg-black flex flex-wrap justify-evenly items-center'>
+					<div className='w-full p-4 md:1/4 rounded-2xl md:rounded-r-2xl bg-black flex flex-wrap justify-evenly items-center'>
 						<a
 							href='https://travel-buddy-eight.vercel.app/'
 							target='_blank'
